@@ -24,6 +24,7 @@ const Login = () => {
       //localStorage.setItem("isAuthenticated", true);
       localStorage.setItem("userDetails",JSON.stringify(data.Userdata));
       //setDirectToHome(true);
+      alert("Login successfull");
     }
     else {
         // stay in the same page

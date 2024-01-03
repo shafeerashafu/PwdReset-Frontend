@@ -36,6 +36,7 @@ const ResetPwd = () => {
     e.preventDefault();
     console.log("Password:", password);
     resetPwd({password});
+    alert("Password changed and updated in the database successfully...");
     
   }
   return (
