@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "./ForgotPwd.css";
 import { forgotPwd } from '../crud.jsx';
+import { Link } from 'react-router-dom';
 
 const ForgotPwd = () => {
     const [email, setEmail] = useState('');
@@ -30,7 +31,7 @@ const ForgotPwd = () => {
         />
         <button type="submit" className="btn">Send Reset Link</button>
         <div className="form-footer">
-          <a href="/login" className="link">Back to Login</a>
+          <Link to="/login" className="link">Back to Login</Link>
         </div>
         {message && <div className="mt-3">{message}</div>}
       </form>
