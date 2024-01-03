@@ -1,0 +1,95 @@
+/* Basic CSS for the forgot password container */
+.forgot-password-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the forgot password form */
+  .forgot-password-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for labels in the forgot password form */
+  .forgot-password-form label {
+    margin-bottom: 5px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+  }
+
+
+  
+  /* Style for inputs in the forgot password form */
+  .forgot-password-form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Style for the form footer */
+  .form-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Style for the link */
+  .link {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  
+  .link:hover {
+    color: #0056b3;
+  }
+  
+  /* Style for the button */
+  /* .btn {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  } */
+  
+
+  button {
+    background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  }
+
+  .btn{
+    background-color: #04AA6D;
+    margin-left: 70px;
+  }
