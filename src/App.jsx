@@ -14,10 +14,11 @@ function App() {
      <BrowserRouter>
       <Routes>
         <Route>
-          <Route path='/' element={<SignUp/>}/>
+          <Route path='/signup' element={<SignUp/>}/>
+          <Route index element={<ResetPwd/>}/>
           <Route path='/login' element={<Login/>}/>
           <Route path='/forgotpwd' element={<ForgotPwd/>}/>
-          <Route path='/resetpwd/:id/:token' element={<ResetPwd/>}/>
+          <Route path='/resetpwd/:id/:token'  element={<ResetPwd/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
