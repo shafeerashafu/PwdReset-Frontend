@@ -3,6 +3,7 @@ import "./ForgotPwd.css";
 //import { resetPwd } from '../crud.jsx';
 import axios from 'axios'
 import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const backendUrl = import.meta.env
                 ?import.meta.env.VITE_BE_URL //localhost
@@ -22,6 +23,7 @@ const backendInstance = axios.create({
 const ResetPwd = () => {
   const [password, setPassword] = useState("");
   const {id, token} = useParams();
+  const navigate = useNavigate()
   
   const resetPwd = async (pwdData) => {
     // const {id, token} = useParams();
@@ -37,6 +39,7 @@ const ResetPwd = () => {
     console.log("Password:", password);
     resetPwd({password});
     alert("Password changed and updated in the database successfully...");
+    navigate("/login");
     
   }
   return (
