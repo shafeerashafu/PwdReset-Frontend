@@ -14,8 +14,8 @@ function App() {
      <BrowserRouter>
       <Routes>
         <Route>
-          <Route path='/signup' element={<SignUp/>}/>
-          <Route index element={<ResetPwd/>}/>
+          <Route path='/' element={<SignUp/>}/>
+          {/* <Route index element={<ResetPwd/>}/> */}
           <Route path='/login' element={<Login/>}/>
           <Route path='/forgotpwd' element={<ForgotPwd/>}/>
           <Route path='/resetpwd/:id/:token'  element={<ResetPwd/>}/>
