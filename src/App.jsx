@@ -15,7 +15,6 @@ function App() {
       <Routes>
         <Route>
           <Route path='/' element={<SignUp/>}/>
-          {/* <Route index element={<ResetPwd/>}/> */}
           <Route path='/login' element={<Login/>}/>
           <Route path='/forgotpwd' element={<ForgotPwd/>}/>
           <Route path='/resetpwd/:id/:token'  element={<ResetPwd/>}/>

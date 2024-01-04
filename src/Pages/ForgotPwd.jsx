@@ -9,7 +9,6 @@ const ForgotPwd = () => {
   
     const handleSubmit = async (e) => {
       e.preventDefault();
-      // Perform validation or send email request (backend logic)
       await forgotPwd({email});
       setMessage(`Password reset link sent to ${email}`);
       setEmail('');
@@ -21,7 +20,6 @@ const ForgotPwd = () => {
      <div className="forgot-password-container">
      
       <form onSubmit={handleSubmit} className="forgot-password-form">
-        {/* <p>Enter your email to reset your password.</p> */}
         <label>Email address:</label>
         <input 
             type="email"

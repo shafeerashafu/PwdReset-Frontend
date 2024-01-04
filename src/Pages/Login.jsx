@@ -3,10 +3,8 @@ import "./Login.css";
 import { Link,Navigate} from "react-router-dom";
 import { loginUser } from "../crud.jsx";
 const Login = () => {
-  //const isAuthenticated = Boolean(localStorage.getItem("isAuthenticated"));
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  //const [directToHome, setDirectToHome] = useState(false);
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
@@ -21,9 +19,7 @@ const Login = () => {
     console.log("Password:", password);
     const data = await loginUser({ email, password });
     if (data.code) {
-      //localStorage.setItem("isAuthenticated", true);
       localStorage.setItem("userDetails",JSON.stringify(data.Userdata));
-      //setDirectToHome(true);
       alert("Login successfull");
     }
     else {
@@ -32,9 +28,7 @@ const Login = () => {
     }
   }
 
-//   if (directToHome || isAuthenticated) {
-//     return <Navigate to={"/"} />;
-//   }
+
 
   return (
     <>

@@ -3,7 +3,6 @@ import "./Signup.css";
 import { Link, Navigate} from "react-router-dom";
 import { signupUser } from "../crud.jsx";
 const SignUp = () => {
-  //const isAuthenticated = Boolean(localStorage.getItem("isAuthenticated"));
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -43,9 +42,6 @@ const SignUp = () => {
     
   };
 
-//   if (isAuthenticated) {
-//     return <Navigate to="/" />;
-//   }
 
   return (
     <>
